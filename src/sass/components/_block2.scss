@@ -1,0 +1,24 @@
+.card-block{
+    background-color: transparent;
+    border: 0;
+    color: var(--primary-color);
+    & .figure-highlight{
+        border-bottom: 4px solid var(--secondary-color);
+        & img{
+            margin: 0;
+        }
+    }
+    & p{
+        color: var(--third-color);
+        font-size: 1.599rem;
+        line-height:2.599rem ;
+        @media #{$m1200} {
+            font-size: 1.52rem;
+            line-height:2.52rem ;
+        }
+        @media #{$m1400} {
+            font-size: 1.599rem;
+            line-height:2.599rem ;
+        }
+    }
+}

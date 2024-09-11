@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: #cd282f;
+    --third-color: #848686;
+    --background-color: #0e1314;
+  }
+
+//Type of Media Queries
+//If the m is Lowecase = min-width
+$m320: 'screen and (min-width: 320px)';
+$m568: 'screen and (min-width: 568px)';
+$m576: 'screen and (min-width: 576px)';
+$m720: 'screen and (min-width: 720px)';
+$m1000: 'screen and (min-width: 1000px)';
+$m1200: 'screen and (min-width: 1200px)';
+$m1400: 'screen and (min-width: 1400px)';
+$m1680: 'screen and (min-width: 1680px)';
+//If the m is Capital = max-width
+$M1024: 'screen and (max-width: 1024px)';
+$M375: 'screen and (max-width: 375px)';
+$M992: 'screen and (max-width: 992px)';
+$M280: 'screen and (max-width: 280px)';

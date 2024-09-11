@@ -1,0 +1,36 @@
+.figure-animation{
+    img{
+        transition: all 100ms linear;
+        &:hover,:focus{
+            box-shadow: 0px 2px 4px 0px rgb(255 255 255 / 8%), 0px 4px 16px 0px rgb(255 255 255 / 4%);
+            opacity: .8;
+            
+        }
+    }
+}
+.btn-animation{
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    &:before{
+        background: var(--secondary-color);
+        bottom: 0;
+        content: "";
+        height: 4px;
+        left: 51%;
+        position: absolute;
+        right: 51%;
+        transition-property: left, right;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        z-index: -1;    }
+    &:hover{
+        &:before{
+            left: 0;
+            right: 0;
+        }
+    }
+}

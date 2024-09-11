@@ -1,0 +1,68 @@
+/* src/sass/base/_typography.scss */
+  @font-face {
+    font-family: 'open_sanscondensed_light';
+    src: url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.eot');
+    src: url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.woff2') format('woff2'),
+         url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.woff') format('woff'),
+         url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.ttf') format('truetype'),
+         url('../assets/fonts/opensanscondensed_light/OpenSans-CondLight-webfont.svg#open_sanscondensed_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.eot');
+  src: url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.woff') format('woff'),
+       url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('../assets/fonts/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.text{
+  &-pink{
+    color: var(--secondary-color);
+  }
+  &-highlight{
+    border-bottom: 1px solid var(--primary-color);
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 160%;
+    letter-spacing: 1px;
+    @media #{$m1200} {
+      font-size: 2.3rem;
+      line-height: 200%;
+    }
+    @media #{$m1400} {
+      font-size: 2.4rem;
+    }
+  }
+  &-md{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    @media #{$m1400} {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+  &-lg{
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    @media #{$m1400} {
+      font-size: 1.699rem;
+      line-height: 2.699rem;
+    }
+  }
+  &-xl{
+    font-size: 4.3rem;
+    font-weight: 100;
+    line-height: 5.3rem;
+    @media #{$m1400} {
+      font-size: 3.8rem;
+      line-height: 4.8rem;
+    }
+  }
+}

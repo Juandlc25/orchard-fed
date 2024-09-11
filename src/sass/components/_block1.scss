@@ -1,0 +1,19 @@
+.figure-object{
+    height: 270px; 
+    overflow: hidden; 
+    width: 100%; 
+    & img{
+        height: 100%; 
+        object-fit: cover; 
+        object-position: center -64px;
+        width: 100%; 
+    }
+    @media #{$m720} {
+        height: 100%;
+        overflow: inherit;
+        & img{
+            height: auto;
+            object-position: center;
+        }
+    }
+}

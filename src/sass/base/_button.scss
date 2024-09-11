@@ -1,0 +1,29 @@
+.btn{
+    &:hover,&:focus,&:active{
+        background-color: transparent!important;
+        border: 0!important;
+        box-shadow: none!important;
+        outline: none!important;
+    }
+    &-text{
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid var(--secondary-color);
+        border-radius: 0;
+        padding: 0;
+        color: var(--primary-color);
+    }
+    &-modal{
+        background-color: transparent;
+        border: 0;
+        outline: none;
+    }
+    &-close{
+        filter: invert(1);
+        font-size: 1.7rem;
+        opacity: 1;
+        &:hover,&:focus,&:active{
+            opacity: .7;
+        }
+    }
+}
